@@ -26,7 +26,7 @@ Application should be able to generate a password that is a combination of alpha
 
 
 
-[](Assets/image/03-javascript-homework-demo.png)
+![](Assets/image/03-javascript-homework-demo.png)
 
 ### Installation
 
