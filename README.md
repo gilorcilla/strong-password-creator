@@ -25,7 +25,7 @@ Application should be able to generate a password that is a combination of alpha
 
 -[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
--[JavaScript] (https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+-[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Test
 
