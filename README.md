@@ -24,8 +24,6 @@
 
 Application should be able to generate a password that is a combination of alphabets, numbers, and special characters with an input from user. This app will run dynamically in any type of browser utilizing HTML and CSS in conjunction with JavaSript code. The application feature a responsive user interface; and it will adjust to multiple screen sizes.
 
-
-
 ![](Assets/image/03-javascript-homework-demo.png)
 
 ### Installation
@@ -35,13 +33,13 @@ Application should be able to generate a password that is a combination of alpha
 
 ### Built With
 
--[Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
--[HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 
--[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
--[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Test
 
