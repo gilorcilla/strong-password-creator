@@ -29,10 +29,10 @@ function generatePassword() {
     numerals === false
   ) {
     alert("Speficy your preference:");
-    var upperCase = confirm("Select uppercase letters?");
-    var lowerCase = confirm("Select lowercase letters?");
-    var numerals = confirm("Select numerals?");
-    var specialCharacter = confirm("Select special characters?");
+    upperCase = confirm("Select uppercase letters?");
+    lowerCase = confirm("Select lowercase letters?");
+    numerals = confirm("Select numerals?");
+    specialCharacter = confirm("Select special characters?");
   }
 
   // password length criteria
@@ -112,12 +112,13 @@ function generatePassword() {
     // for (var x = 0, x < upperCase.length; x++) {
     //   chosen.push(upperCase[x]);
     // }
-    selected.concat(upper);
+    selected.push(...upper);
   }
 
   // lower case inserted and chosen
   if (lowerCase) {
-    selected.concat(lower);
+    selected.push(...lower);
+    console.log("Upper", lower, upper, special, numbers);
     // for (var y = 0, y < lowerCase.length; y++ ){
     //   chosen.push(lowerCase[y]);
 
@@ -126,7 +127,7 @@ function generatePassword() {
 
   // if numeral inserted and chosen
   if (numerals) {
-    selected.concat(numbers);
+    selected.push(...numbers);
     // for (var z = 0, z < numerals.length; z++){
     //   chosen.push(numerals[z]);
 
@@ -135,20 +136,20 @@ function generatePassword() {
 
   // if special character inserted and chosen
   if (specialCharacter) {
-    selected.concat(special);
+    selected.push(...special);
     // for (var a = 0; a < specialCharacter.length; a++){
     //   chosen.push(specialCharacter);
     // }
   }
   console.log(selected);
   // finally the result stores all password criteria
-  var finalResult = [];
+  var finalResult = "";
   for (b = 0; b < userPasswordLength; b++) {
-    finalResult.push(selected[Math.floor(Math.random() * selected.length)]);
+    finalResult += selected[Math.floor(Math.random() * selected.length)];
   }
 
   console.log(finalResult); // return finalResult
-  return finalResult.join("");
+  return finalResult;
 }
 
 // Add event listener to generate button
