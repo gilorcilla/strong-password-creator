@@ -21,6 +21,15 @@ function generatePassword() {
   // console.log(upperCase);
 }
 
+// validate input
+while ((upperCase===false) && (lowerCase===false) && (specialCharacter===false) && (numerals===false)) {
+  alert ("Speficy your preference:");
+  var upperCase = confirm ("Select uppercase letters?");
+  var lowerCase = confirm ("Select lowercase letters?");
+  var numerals = confirm ("Select numerals?");
+  var specialCharacter = confirm ("Select special characters?");
+}
+
 // password length criteria
 var userPasswordLength = prompt ("How long would you want your password? Please choose between 8-128.");
 while ((userPasswordLength < 8) || (userPasswordLength > 128)){
@@ -33,14 +42,16 @@ while ((userPasswordLength < 8) || (userPasswordLength > 128)){
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g","h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numerals = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-var specialCharacter = [" ", "!", " " ", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "\", "^", "_", "`", "{", "|", "}", "~" ];
+//var specialCharacter = [" ", "!", " ", ",", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "\", "^", "_", ",", "`", "{", "|", "}", "~"];
+var specialCharacter = ["",  "!", "#", "$", "%",  "&",  "'",  "(", ")", "*", "+", ",", "-",  ".", "/", ":", ";", "<", "=", ">", "?",  "@", "[", "\", "\']', "^",  "_", "`", "{", "|", "}", "~", '"']; 
+
 
 
 // upper case inserted and chosen
 if (upperCase) {
-  for (var x = 0, x < upperCase.length; x++ ){
+  for (var x = 0, x < upperCase.length; x++) {
     chosen.push(upperCase[x]);
-  
+  }
 }
 
 // lower case inserted and chosen
