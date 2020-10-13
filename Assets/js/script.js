@@ -109,9 +109,6 @@ function generatePassword() {
 
   // upper case inserted and chosen
   if (upperCase) {
-    // for (var x = 0, x < upperCase.length; x++) {
-    //   chosen.push(upperCase[x]);
-    // }
     selected.push(...upper);
   }
 
@@ -119,27 +116,16 @@ function generatePassword() {
   if (lowerCase) {
     selected.push(...lower);
     console.log("Upper", lower, upper, special, numbers);
-    // for (var y = 0, y < lowerCase.length; y++ ){
-    //   chosen.push(lowerCase[y]);
-
-    // }
   }
 
   // if numeral inserted and chosen
   if (numerals) {
     selected.push(...numbers);
-    // for (var z = 0, z < numerals.length; z++){
-    //   chosen.push(numerals[z]);
-
-    //}
   }
 
   // if special character inserted and chosen
   if (specialCharacter) {
     selected.push(...special);
-    // for (var a = 0; a < specialCharacter.length; a++){
-    //   chosen.push(specialCharacter);
-    // }
   }
   console.log(selected);
   // finally the result stores all password criteria
