@@ -4,6 +4,8 @@
 
 ### User Story
 
+Just about any technology or device, access to any accounts i.e. bank account, stocks, and etc needs password. If you utilize a weak password for your bank account access, you end-up loosing your account to brute-force cracking attack. Imagine being a victim of brute-force cracking and loosing all your hard-earned savings? That will be the most tragic incident can happen. But if you make your password random, sometime you tend to forget it and get locked-out of your account. Most of us tend to use one complex password and use it everywhere, that will be a breach at one access exposes all your accounts. So, your priority is to enlist the help of password generator. This password generator will do the work for you of combining alphabets, numbers, and special characters to create a strong password. It requires a minimum participation from the user, and it will provide you the new password in few seconds.
+
 ### Table of Contents
 
 -[User Story](https://github.com/gilorcilla/strong-password-creator#user-story)
@@ -42,6 +44,13 @@ Application should be able to generate a password that is a combination of alpha
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Test
+
+- Link all your files from html to your javascript and css files.
+- Activate index.html in google chrome browser to test that the password image generator image appears in your browser.
+- Click on red button "password generator button" and make sure that the "pull-down" prompt appears and start some questions regarding how you want your password.
+- Then at the end of the prompt it will ask you how long you want your password.
+- If everything works out well, at the end it will provide you the strong random password based from your election.
+- Feel free to repeat the process, and modify your response from your first attempt.
 
 ### License
 
